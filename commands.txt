@@ -1,0 +1,73 @@
+git config --global user.name "Samuel O"
+git config --global user.email "samueladebare1010@gmail.com"
+git config --global init.default branch main
+git config -h
+OR
+git help config
+
+
+///In the directory
+git init
+git status
+
+git add <filename>
+OR 
+git add .
+OR
+git add --all
+OR
+git add -A
+
+git rm --cached <filename>
+
+git commit -m "first commit - commiting all files to the repo"
+
+git diff
+
+git restore --staged index.htm
+
+//skips staging
+git commit -a -m "updated text to free range"
+
+git rm "secret recipe.htm"
+
+git restore "secret recipe.htm"
+
+//rename a filename to "Primary Logo.png
+git mv "KCC Logo.png" "Primary Logo.png"
+
+git log
+git log --oneline
+git log -p
+
+//to amend most recent commit in case of error
+git commit -m "Changed file name name to Primary Logo.png" --amend
+
+//to go back
+git reset <hashtag>
+
+git branch <branch_name>
+
+git branch
+
+git switch <branch_name>
+OR 
+git branch <branch_name>
+
+//on master to master merging
+git merge -m "Merge FixTemp to master" Fixtemp
+
+//delete branch after merge
+git branch -d <branch_name>
+
+//Github
+git remote add origin https://github.com/SamuelAdebare1/CookingComp.git
+git branch master
+git push -u origin master
+git push --all
+
+//download changes from github to vscode/other
+git fetch
+git merge
+OR instead of using the two commands above use:
+git pull
